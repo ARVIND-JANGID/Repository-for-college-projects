@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Use of let</title>
+</head>
+<body>
+<h2> add two number </h2>
+<Input type="Number" id="num1"placeholder="enter first no"> <br>
+<Input type="Number" id="num2"placeholder="enter second no"> <br>
+<button onclick="addnumber()"> add </button>
+<h3> Result <span id="result"> </span> </h3>
+<script>
+function addnumber ()
+{
+let a= parseFloat(document.getElementById("num1").value);
+let b= parseFloat(document.getElementById("num2").value);
+let sum=a+b;
+document.getElementById("result").innerText=sum;
+}
+<!--a can only use inside the function by let-->
+</script>
+</body>
+</html>
+
+
